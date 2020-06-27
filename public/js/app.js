@@ -1,4 +1,4 @@
-console.log("Printing from the client Side Javscript File!!")
+// console.log("Printing from the client Side Javscript File!!")
 
 // fetch('http://puzzle.mead.io/puzzle').then((response) =>{
 //     response.json().then((data)=>{
