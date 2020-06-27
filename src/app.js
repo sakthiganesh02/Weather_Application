@@ -8,7 +8,7 @@ const forcast = require('./utilis/forcast')
 const PathDir = path.join(__dirname,'../public')
 const ViewPath = path.join(__dirname,'templates/views')
 const partialPath = path.join(__dirname,'templates/partials')
-
+const port = process.env.PORT || 3000
 console.log(__dirname) 
 app.use(express.static(PathDir))
 
@@ -84,6 +84,6 @@ app.get('*',(req,res)=>{
         name:'Sakthi Ganesh'
     })
 })
-app.listen(3000,()=>{
+app.listen(port,()=>{
     console.log('Displaying in the Command Line!!')
 })
