@@ -14,7 +14,10 @@ const forcast= (lat,lon,callback)=>{
             callback(undefined,{
                 temperature: body.currently.temperature,
                 precprob : body.currently.precipProbability,
-                location : body.timezone
+                location : body.timezone,
+                summary : body.currently.summary,
+                tempHigh : body.daily[0].temperatureHigh,
+                tempLow : body.daily[0].temperatureLow 
             })    
         }
     

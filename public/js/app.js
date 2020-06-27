@@ -40,7 +40,9 @@ weatherData.addEventListener('submit', (e)=>{
                 else{
                    messageOne.textContent = data.location
                    messageTwo.textContent = 'The Temperature is ' + data.forcast.temperature +
-                   'F .The Probability of Precipitation is '+ data.forcast.precprob + '.'
+                   'F .The Probability of Precipitation is '+ data.forcast.precprob + '.' + data.forcast.summary 
+                   + 'The Temperature High Recorded Today is ' + data.forcast.tempHigh +
+                   ' and the Temperature Low Recorded Today is ' + data.forcast.tempLow  
                 }
             })
     })
